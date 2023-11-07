@@ -1,0 +1,495 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo1{
+    width: 250px;
+    height: 80px;
+}
+.logo{
+    width: 30%;
+    /* background-color: aliceblue; */
+    margin-left: 20PX;
+}
+.otherside{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20PX;
+}
+.icon{
+    width: 30px;
+}
+@keyframes animation{
+    25%{ background-image: url("1.jpg");}
+    25%{ background-image: url("2.jpg");}
+    50%{ background-image: url("3.jpg");}
+}
+@keyframes move{
+    from{
+        left: -90%;
+    }
+    to{
+        left: 0;
+    }
+    
+}
+@keyframes away{
+    from{
+        right: -90%;
+    }
+    to{
+        right: 0;
+    }
+    
+}
+.background-img{
+    height: 138vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    animation: animation 12s infinite;
+    background-image: url("1.jpg");
+    animation-delay: 3s;
+    
+    
+}
+.pop-left{
+    height: 82vh;
+    width: 44%;
+    background-color: rgb(23,48,88);
+    border-radius: 0 100% 100% 0;
+    position: absolute;
+    margin-top: 28vh; 
+    color: white;
+    animation: move 3s ease;
+    
+}
+.pop-left h1{
+    margin-top: 120px;
+    margin-left: 20px;
+}
+.pop-left p{
+    margin-left: 20px;
+    /* margin-top: 20px; */
+}
+.right{
+    width: 50px;
+    position: fixed;
+    right: 4.7px;
+    top: 320px;
+    animation:away 1s ease;
+
+
+}
+.pop-right{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 315px;
+    border-radius: 50%;
+    animation: away 1s ease;
+}
+.pop-lefta{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 75px;
+    border-radius: 40px;
+    background-color: rgb(146,205,1);
+    border: none;
+    color: white;
+}
+.first{
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 20vh; */
+    color: rgb(128,143,179);
+    background-color: white;
+    padding: 15vh 0 0 0;
+    
+}
+
+span{
+    color: rgb(146,205,135);
+
+}
+.first h1{
+    color: rgb(23,48,88);
+    margin-bottom: 2.5vh;
+    font-size: 60px;
+}
+.first p{
+    font-size: 20px;
+}
+.parentdiv{
+    display: flex;
+    gap: 30px;
+    margin-left: 25px;
+    margin-top: 30vh;
+
+}
+
+
+.a1{
+
+    height: 410px;
+    width: 410px;
+    border-radius: 100%;
+    overflow: hidden;
+    animation: rotate1 1.5s linear;
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotate(90deg);
+       
+        opacity: 0;
+    
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+        transition: all 1s ease;
+    }
+    
+}
+.b1{
+    height: 410px;
+    width: 410px;
+    border-radius: 100%;
+    overflow: hidden;
+    animation: rotate2 2.0s linear;
+   
+ 
+}
+@keyframes rotate2 {
+    0%{
+        transform: rotate(90deg);
+       
+        opacity: -0.1;
+    
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+        
+        transition: all 6s ease;
+    }
+    
+}
+.c1{
+
+    height: 410px;
+    width: 410px;
+    border-radius: 100%;
+    overflow: hidden;
+    animation: rotate3 2.5s linear;
+   
+ 
+}
+@keyframes rotate3 {
+    0%{
+        transform: rotate(90deg);
+        display: none;
+        opacity: -0.2;
+    
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+        
+        transition: all 9s ease;
+    }
+    
+}
+
+.c2{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  
+}
+.c2 p{
+    font-size: 25px;
+}
+.c2 span{
+    font-size: 25px;
+    color: rgb(23,48,88);
+    font-weight: 700;
+}
+.c3{
+    background-color: green;
+    height: 60%;
+    width: 100%;
+    background-image: url(1.jpg);
+    background-size: cover;
+}
+.c4{
+    background-color: green;
+    height: 60%;
+    width: 100%;
+    background-image: url(2.jpg);
+    background-size: cover;
+}
+.c5{
+    background-color: green;
+    height: 60%;
+    width: 100%;
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.second{
+    height: 100vh;
+    width: 100%;
+    background-image: url(1.jpg);
+    top: 0;
+    z-index: -99;
+    position: sticky;
+}
+.third{
+    width: 100%;
+    height: 120vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+ }
+ .container1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    justify-content: center;
+    gap: 30px;
+    height: 105vh;
+    width: 30%;
+    background-color: rgb(23,48,88);
+}
+.container1 img{
+    width: 80px;
+}
+.container1 button{
+    width: 190px;
+    height: 70px;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(147,205,1);
+}
+.contheader{
+    font-size: 28px;
+}
+
+.container2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    height: 105vh;
+    width: 40%;
+    background-color: rgb(31, 63, 116);
+}
+.container2 img{
+    width: 80px;
+}
+.container2 button{
+    width: 190px;
+    height: 70px;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(147,205,1);
+}
+.container3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-right: 2rem;
+    gap: 30px;
+    height: 105vh;
+    width: 30%;
+    background-color: rgb(23,48,88);
+}
+.container3 img{
+    width: 80px;
+}
+.container3 button{
+    width: 190px;
+    height: 70px;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(147,205,1);
+}
+
+
+.pic{
+    height: 90vh;
+    width: 50%;
+    margin-left: 30px;
+}
+.pics{
+    width: 90vh;
+    height: 90vh;
+    border-radius: 100%;
+    background-image: url(bottom2-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.us{
+    margin-top: 50px;
+    width: 200px;
+    height: 75px;
+    border-radius: 40px;
+    background-color: rgb(146,205,1);
+    border: none;
+    color: white;
+}
+.ty p{
+    font-size: 20px;
+    color: rgb(147,175,215);
+}
+.ty h1{
+    font-size: 50px;
+    color: rgb(23,48,88);
+}
+.fourth{
+    height: 105vh;
+    display: flex;
+}
+
+.fifth{
+    height: 120vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+
+    
+    
+}
+.form{
+    width: 50%;
+    height: 120vh;
+}
+.form p{
+    font-size: 20px;
+    color: rgb(147,175,215);
+}
+.form h1{
+    color: rgb(23,48,88);
+    font-size: 60px;
+}
+.ph1{
+    margin: 100px 0 0 25px; 
+}
+.statue{
+    width: 100%;
+    height: 100vh;
+    
+   
+}
+.stat{
+    gap: 73px;
+    width: 60%;
+    height: 120vh;
+    /* margin-left: 60vh; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    animation: kans 1s ease;
+    
+}
+@keyframes kans{
+    from{
+        left: -90%;
+    }
+    to{
+        left: 0;
+    }
+    
+}
+.inpu{
+    margin-top: 10vh;
+    margin-left: 25px; 
+}
+input{
+    height: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 50px ;
+    padding: 1rem; 
+    border: none;
+    background-color: rgb(219, 219, 221);
+}
+.submit{
+    margin: 50px 0 0 270px;
+    width: 200px;
+    height: 75px;
+    border-radius: 40px;
+    background-color: rgb(146,205,1);
+    border: none;
+    color: white;
+}
+.seventh{
+    color: white;
+    width: 100%;
+    height: 140vh;
+    background-color: rgb(23,48,88);
+    display: flex;
+    align-items: center;
+    gap: 240px;
+}
+.pict{
+    height: 90vh;
+    width: 35%;
+    margin-left: 30px;
+}
+.picts{
+    width: 100vh;
+    height: 100vh;
+    border-radius: 100%;
+    background-image: url(bottom2-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+button:hover{
+    background-color: rgb(1, 7, 17);
+    transition: all 1s ease;
+}
+.call{
+    display: flex;
+    gap: 60px;
+}
+.site{
+    display: flex;
+    gap: 150px;
+}
+
